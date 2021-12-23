@@ -1,18 +1,16 @@
-
+html {
+    height: 100vh;
+}
+    
 .grid-container {
     display: flex;
     justify-content: center;
+    /* align-items: center; */
     display: grid;
-    /* grid-template-columns: repeat(16, 25px [col-start]); */
-   
-
-    
 }
 
 .grid {
     padding: 11px;
     border: .1px solid black;
-    display: flex;
-    
 }
 
