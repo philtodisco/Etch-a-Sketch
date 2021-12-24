@@ -16,21 +16,33 @@ for(i = 0; i < grideSize2; i++) {
     }) 
 }
 
-let colorWell
-let defaultColor = "#0000ff"
+let colorWell;
+let defaultColor = "#0000ff";
 
 window.addEventListener("load", startup, false);
 
-startup = () => {
-    colorWell = document.querySelector("#colorWell")
-    colorWell.value = defaultColor
-    colorWell.addEventListener("input", updateFirst, false)
-    colorWell.addEventListener("change", updateAll, false)
-    colorWell.select()
-}
-
-
-
+function startup() {
+    colorWell = document.querySelector("#colorWell");
+    colorWell.value = defaultColor;
+    colorWell.addEventListener("input", updateFirst, false);
+    colorWell.addEventListener("change", updateAll, false);
+    colorWell.select();
+  }
+  
+  function updateFirst(event) {
+    let grid = document.querySelector(".grid");
+  
+    if (grid) {
+      grid.style.backgroundColor = event.target.value;
+    }
+  }
+  
+  function updateAll(event) {
+    document.querySelectorAll(".grid").forEach(function(grid) {
+      grid.style.backgroundColor = event.target.value;
+    });
+  }
+  
 
 
 

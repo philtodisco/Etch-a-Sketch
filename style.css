@@ -12,5 +12,6 @@ html {
 .grid {
     padding: 11px;
     border: .1px solid black;
+    /* background-color: blue; */
 }
 
