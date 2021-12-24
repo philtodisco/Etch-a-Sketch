@@ -9,7 +9,7 @@ html {
     display: grid;
 }
 
-.grid {
+.block {
     padding: 11px;
     border: .1px solid black;
     /* background-color: blue; */
