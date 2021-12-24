@@ -16,6 +16,20 @@ for(i = 0; i < grideSize2; i++) {
     }) 
 }
 
+let colorWell
+let defaultColor = "#0000ff"
+
+window.addEventListener("load", startup, false);
+
+startup = () => {
+    colorWell = document.querySelector("#colorWell")
+    colorWell.value = defaultColor
+    colorWell.addEventListener("input", updateFirst, false)
+    colorWell.addEventListener("change", updateAll, false)
+    colorWell.select()
+}
+
+
 
 
 
