@@ -1,20 +1,47 @@
-
-
- /* html, body {
-    margin: 0;
-    padding: 0;
-} */
-
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
 
 .grid-container {
     display: grid;
-    width: 960px;
-    height: 960px;
+    width: 75vh;
+    height: 75vh;
     grid-gap: 0;
     margin: auto;
     justify-content: stretch;
-    border: 1px solid black;
+    border: 2px solid black;
 }
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px;
+}
+
+#change-size {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px
+  }
+  
+#change-size:hover {background-color: #e7e7e7;}
+
+#clear {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px
+  }
+  
+#clear:hover {background-color: #e7e7e7;}
+
 
 .mouseover {
     background: black;
