@@ -1,7 +1,7 @@
 const gridContainer = document.querySelector('.grid-container')
 const block = document.getElementsByClassName('.block')
 const changeSize = document.getElementById('change-size')
-const reset = document.getElementById('reset')
+const clear = document.getElementById('clear')
 let size = 50
 
 
@@ -16,17 +16,23 @@ createGrid = (size) => {
         gridContainer.appendChild(block)
     }
     // change color of a block on "mouseover"
-    blocks = document.querySelectorAll(".block")
+    blocks = document.querySelectorAll('.block')
     blocks.forEach((block) => {
-        block.addEventListener("mouseover", (e) => {
-            block.classList.add("mouseover")
+        block.addEventListener('mouseover', (e) => {
+            block.classList.add('mouseover')
         })
     })
 }
 
-changeSize.addEventListener("click", (e) => {
+clear.addEventListener('click', (e) => {
     blocks.forEach((block) => {
-        block.classList.remove("mouseover")
+        block.classList.remove('mouseover')
+    })
+})
+
+changeSize.addEventListener('click', (e) => {
+    blocks.forEach((block) => {
+        block.classList.remove('mouseover')
     })
     size = prompt("Enter a number between 16-100")
     // continue to prompt if user input doesn't meet conditions
@@ -36,12 +42,4 @@ changeSize.addEventListener("click", (e) => {
     createGrid(size)
 })
 
-
-
-
-
 createGrid(size)
-
-
-
-
