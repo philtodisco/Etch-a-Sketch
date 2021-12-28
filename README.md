@@ -4,8 +4,8 @@ This is a simple Etch-a-Sketch application to be used in the browser. Users can 
 
 **Here are the links to my deployed application and my reposository:**
 
-* [Repo](https://github.com/philtodiscoglass/boro-app-client)
-* [Application](https://philtodiscoglass.github.io/boro-app-client/)
+* [Repo](https://github.com/philtodisco/Etch-a-Sketch)
+* [Application](https://philtodisco.github.io/Etch-a-Sketch/)
 
 **Tech Used:**
 
