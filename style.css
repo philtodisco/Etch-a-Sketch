@@ -1,17 +1,22 @@
-html {
-    height: 100vh;
-}
-    
+
+
+ /* html, body {
+    margin: 0;
+    padding: 0;
+} */
+
+
 .grid-container {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
     display: grid;
+    width: 960px;
+    height: 960px;
+    grid-gap: 0;
+    margin: auto;
+    justify-content: stretch;
+    border: 1px solid black;
 }
 
-.block {
-    padding: 11px;
-    border: .1px solid black;
-    /* background-color: blue; */
+.mouseover {
+    background: black;
 }
 
