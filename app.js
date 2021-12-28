@@ -1,6 +1,7 @@
 const gridContainer = document.querySelector('.grid-container')
 const block = document.getElementsByClassName('.block')
 const changeSize = document.getElementById('change-size')
+const reset = document.getElementById('reset')
 let size = 50
 
 
@@ -28,12 +29,14 @@ changeSize.addEventListener("click", (e) => {
         block.classList.remove("mouseover")
     })
     size = prompt("Enter a number between 16-100")
-    // prevent user from 
+    // continue to prompt if user input doesn't meet conditions
     if (size < 16 || size > 100 || isNaN(size)) {
         size = prompt("Enter a number between 16-100")
     }
     createGrid(size)
 })
+
+
 
 
 
